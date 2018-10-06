@@ -21,6 +21,8 @@
     <!-- Custom CSS -->
     <link href="css/stylish-portfolio.min.css" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
+
   </head>
 
   <body id="page-top">
@@ -33,6 +35,7 @@
         <h3 class="mb-5">
           <em>ekibimiz tarafından <br> topluluk eğitimleri sırasında kullanılmak üzere hazırlanan <br> Ubuntu 18.04 temelli özelleştirilmiş bir dağıtım... </em>
         </h3>
+        <a class="btn btn-primary btn-xl js-scroll-trigger" href="#download">Hemen İndir</a>
         <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Biz Kimiz ?</a>
       </div>
       <div class="overlay"></div>
@@ -104,7 +107,9 @@
                   <h2>Masaüstü Ortamı - XFCE</h2>
                 </span>
               </span>
-              <img class="img-fluid" src="img/ss-2.png" alt="">
+              <a href="/img/ss-2.png" data-toggle="lightbox" data-gallery="img-gallery" class="img-fluid">
+                <img src="/img/ss-2.png" class="img-fluid">
+              </a>
             </a>
           </div>
           <div class="col-lg-6">
@@ -114,7 +119,9 @@
                   <h2>Giriş Ekranımız</h2>
                 </span>
               </span>
-              <img class="img-fluid" src="img/ss-1.png" alt="">
+              <a href="/img/ss-1.png" data-toggle="lightbox" data-gallery="img-gallery" class="img-fluid">
+                <img src="/img/ss-1.png" class="img-fluid">
+              </a>
             </a>
           </div>
           <div class="col-lg-6">
@@ -124,7 +131,9 @@
                   <h2>Ubunutu 18.04 Temel Alındı</h2>
                 </span>
               </span>
-              <img class="img-fluid" src="img/ss-3.png" alt="">
+              <a href="/img/ss-3.png" data-toggle="lightbox" data-gallery="img-gallery" class="img-fluid">
+                <img src="/img/ss-3.png" class="img-fluid">
+              </a>
             </a>
           </div>
           <div class="col-lg-6">
@@ -134,7 +143,9 @@
                   <h2>Her şey hazır!</h2>
                 </span>
               </span>
-              <img class="img-fluid" src="img/ss-4.png" alt="">
+              <a href="/img/ss-4.png" data-toggle="lightbox" data-gallery="img-gallery" class="img-fluid">
+                <img src="/img/ss-4.png" class="img-fluid">
+              </a>
             </a>
           </div>
         </div>
@@ -191,6 +202,12 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/stylish-portfolio.min.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
+    <script>
+      $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+        event.preventDefault();
+        $(this).ekkoLightbox();
+      });
+    </script>
   </body>
 </html>
