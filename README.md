@@ -1,4 +1,4 @@
-[**dev.pausiber.xyz**](https://dev.pausiber.xyz)
+[**dev.pausiber.xyz/**](https://dev.pausiber.xyz)
 
 ### Biz Kimiz ?
 
